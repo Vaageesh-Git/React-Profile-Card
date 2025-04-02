@@ -1,10 +1,12 @@
 import React from "react";
 import "./style.css";
-import {useState} from "react"
+import {useState} from "react";
+import profileImg from "./image/profile.png";
+
 export default function App() {
   return (
     <div className= "main">
-      <Properties Image_src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" name="Vaageesh" post="Software Engineer"/>
+      <Properties Image_src={profileImg} name="Vaageesh" post="Software Engineer"/>
       <Buttons/>
     </div>
   );
